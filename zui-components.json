@@ -1,0 +1,10 @@
+{
+  "componentsDir": "./src/components/ui",
+  "utilsDir": "./src/lib/utils",
+  "typescript": true,
+  "tailwind": true,
+  "aliases": {
+    "components": "./src/components/ui",
+    "utils": "./src/lib/utils"
+  }
+}
