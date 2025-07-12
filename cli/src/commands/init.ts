@@ -7,16 +7,16 @@ import { logger } from "../utils/logger.js";
 
 export const initCommand = new Command()
   .name("init")
-  .description("Initialize zui in your project")
+  .description("Initialize zicoui in your project")
   .action(async () => {
-    logger.info("Initializing zui ...");
+    logger.info("Initializing zicoui ...");
 
     const questions = [
       {
         type: "text" as PromptType,
         name: "componentsDir",
         message: "Where would you like to install components?",
-        initial: "./src/components/ui",
+        initial: "./src/components/zicoui",
       },
       {
         type: "text" as PromptType,
@@ -51,8 +51,8 @@ export const initCommand = new Command()
       },
     };
 
-    // Create zui-components.json config file
-    const configPath = path.join(process.cwd(), "zui-components.json");
+    // Create zicoui.json config file
+    const configPath = path.join(process.cwd(), "zicoui.json");
     writeFileSync(configPath, JSON.stringify(config, null, 2));
 
     // Create directories
@@ -82,6 +82,6 @@ export function cn(...inputs: ClassValue[]) {
       writeFileSync(utilsFile, utilsContent);
     }
 
-    logger.success("Configuration saved to zui-components.json");
-    logger.info("You can now add components with: zui add <component-name>");
+    logger.success("Configuration saved to zicoui.json");
+    logger.info("You can now add components with: zicoui add <component-name>");
   });

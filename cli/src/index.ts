@@ -8,7 +8,7 @@ import { listCommand } from "./commands/list.js";
 const program = new Command();
 
 program
-  .name("ZUI - ZicoApp / Design - CLI")
+  .name("ZicoUI - ZicoApp / Design - CLI")
   .description("CLI for managing custom UI components")
   .version("1.0.0");
 

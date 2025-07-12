@@ -13,7 +13,7 @@ export interface Config {
 }
 
 export async function getConfig(): Promise<Config | null> {
-  const configPath = path.join(process.cwd(), "zui-components.json");
+  const configPath = path.join(process.cwd(), "zicoui.json");
 
   if (!existsSync(configPath)) {
     return null;

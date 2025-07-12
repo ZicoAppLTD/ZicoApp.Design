@@ -1,10 +1,10 @@
 {
-  "componentsDir": "./src/components/ui",
+  "componentsDir": "./src/components/zicoui",
   "utilsDir": "./src/lib/utils",
   "typescript": true,
   "tailwind": true,
   "aliases": {
-    "components": "./src/components/ui",
+    "components": "./src/components/zicoui",
     "utils": "./src/lib/utils"
   }
 }

@@ -17,7 +17,7 @@ export const addCommand = new Command()
     const config = await getConfig();
 
     if (!config) {
-      logger.error("Configuration not found. Run `zui init` first.");
+      logger.error("Configuration not found. Run `zicoui init` first.");
       process.exit(1);
     }
 
